@@ -12,17 +12,9 @@
 //     "image": "https://i.imgur.com/4ucOXpZ.png"
 //   }
 
-import { useContext } from "react"
-import { useParams } from "react-router-dom"
-import { DataContext } from "../../context/DataProvider"
-
 // eslint-disable-next-line react/prop-types
 const ProductCard = ({name,category,price, image} ) => {
-    // const {productId} = useParams()
-    // const {products} = useContext(DataContext)
-
-    // const [currentProduct] = products.filter(item=>item.id===productId)
-    // const {name,category,price, image} = currentProduct
+ 
 
   return (
     <div >
