@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {  Route, Routes } from "react-router-dom";
+import "./App.css";
+import ProductListingPage from "./pages/productListingPage";
+import ProductPage from "./pages/productPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        ALzion Labs
-      </div>
-    </>
-  )
+      <Routes>
+        <Route path="/products/:productId" element={<ProductPage />} />
+        <Route path="/products/" element={<ProductListingPage />} />
+      </Routes>
+  );
 }
 
-export default App
+export default App;
